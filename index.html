@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="description"
           content="Spec-Gaussian: Anisotropic View-Dependent Appearance for 3D Gaussian Splatting">
     <meta name="keywords" content="Anisotropic Spherical Gaussian, Specular Reconstruction, 3D Gaussian Splatting">
@@ -25,8 +25,7 @@
         gtag('config', 'G-PYVRSFMDRL');
     </script>
 
-
-    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro|Jost"
           rel="stylesheet">
 
 
@@ -43,13 +42,6 @@
     <script src="./static/js/bulma-carousel.min.js"></script>
     <script src="./static/js/bulma-slider.min.js"></script>
     <script src="./static/js/index.js"></script>
-    <script src="./static/js/app.js"></script>
-    <script src="./static/js/video_comparison.js"></script>
-
-    <link rel="stylesheet" href="./static/css/dics.original.css">
-    <script src="./static/js/event_handler.js"></script>
-    <script src="./static/js/dics.original.js"></script>
-
 </head>
 <body>
 
@@ -147,7 +139,18 @@
                                   <span class="icon">
                                       <i class="fas fa-file-pdf"></i>
                                   </span>
-                                  <span>Paper</span>
+                                  <span>Paper - 90MB</span>
+                                </a>
+                            </span>
+
+                            <!-- Arxiv Link. -->
+                            <span class="link-block">
+                                <a href=""
+                                   class="external-link button is-normal is-rounded is-dark">
+                                  <span class="icon">
+                                      <i class="ai ai-arxiv"></i>
+                                  </span>
+                                  <span>Arxiv - 50MB</span>
                                 </a>
                             </span>
 
@@ -186,180 +189,48 @@
 
 <section class="hero is-light is-small">
     <div class="hero-body">
-        <div class="container is-max-desktop">
-            <!-- Results. -->
+        <div class="container">
             <div class="content has-text-justified">
                 <h3 class="title is-3 is-centered has-text-centered">Results on the NeRF Synthetic Dataset</h3>
             </div>
 
-            <div class="content has-text-centered">
-                <video class="video" width="100%" id="xyalias9" loop playsinline autoplay muted
-                       src="resources/lego-compare.mp4" onplay="resizeAndPlay(this)"
-                       style="height: 0px;"></video>
-                <canvas height=0 class="videoMerge" id="xyalias9Merge"></canvas>
-            </div>
-
-            <div class="container">
-                <ul class="nav nav-tabs nav-fill nav-justified" id="object-scale-recon">
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="objectSceneEvent(0)">bicycle</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" onclick="objectSceneEvent(1)">bonsai</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="objectSceneEvent(2)">counter</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="objectSceneEvent(3)">flowers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="objectSceneEvent(4)">garden</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="objectSceneEvent(5)">kitchen</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="objectSceneEvent(6)">stump</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="objectSceneEvent(7)">treehill</a>
-                    </li>
-                </ul>
-                <div class="b-dics" style="width: 1000px; font-weight: 600;">
-                    <img src="resources/360_stmt_supp/bonsai_12_3dgs.jpg" alt="3DGS+EWA">
-                    <img src="resources/360_stmt_supp/bonsai_12_ours.jpg" alt="Mip-Splatting (ours)">
-                    <img src="resources/360_stmt_supp/bonsai_12_upgt.jpg" alt="GT (Training resolution)">
-                    <img src="resources/360_stmt_supp/bonsai_12_gt.jpg" alt="GT (8x resolution)">
+            <div id="results-carousel" class="carousel results-carousel">
+                <div class="item item-fullbody">
+                    <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                        <source src="video/blender/lego-compare.mp4"
+                                type="video/mp4">
+                    </video>
                 </div>
-            </div>
-
-            <br>
-
-            <h3 class="title is-4">Effectiveness of 2D Mip Filter</h3>
-            <div class="content has-text-justified">
-                <p>
-                    Our 2D Mip filter simulates a 2D box filter in physical imaging process. It approximates exactly
-                    1 pixel in screen space, thus effectively reducing aliasing artifacts.
-                    As shown in the following video, removing the 2D Mip filter results in aliasing artifacts when
-                    zooming out.
-                </p>
-            </div>
-
-            <div class="content has-text-centered">
-                <video class="video" width="100%" id="xyalias3" loop playsinline autoplay muted
-                       src="resources/chair_ours_no2d_vs_ours.mp4" onplay="resizeAndPlay(this)"
-                       style="height: 0px;"></video>
-                <canvas height=0 class="videoMerge" id="xyalias3Merge"></canvas>
-            </div>
-
-            <h3 class="title is-4">Effectiveness of 3D Smoothing Filter</h3>
-            <div class="content has-text-justified">
-                <p>
-                    The 3D smoothing filter constrains the size of the 3D Gaussian primitives based on the maximal
-                    sampling frequency induced by the training views, eliminating high frequency artifacts when
-                    zooming in.
-                    In the following comparisons, we train the models with downsampled images and render high
-                    resolution images to simulate zoom-in effects. Excluding the 3D smoothing filter results in
-                    high-frequency artifacts.
-                    Note that both models are trained with downsampled images with factor 8 and render at
-                    higher-resolution.
-                    GT (Training resolution) is the image we used for training but bilinearly upsampled to
-                    higher-resolution for reference and GT (8x resolution) is the real GT image we used for
-                    evaluation.
-                </p>
-            </div>
-
-            <div class="container">
-                <ul class="nav nav-tabs nav-fill nav-justified" id="ablation-3d-filter">
-                    <li class="nav-item">
-                        <a class="nav-link active" onclick="ablation3DEvent(0)">bicycle 1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="ablation3DEvent(1)">bicycle 2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="ablation3DEvent(2)">bicycle 3</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="ablation3DEvent(3)">garden 1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="ablation3DEvent(4)">garden 2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="ablation3DEvent(5)">treehill</a>
-                    </li>
-                </ul>
-                <div class="b-dics" style="width: 1000px; font-weight: 600;">
-                    <img src="resources/360_stmt_ablation/bicycle_0_no3d.jpg" alt="Ours w/o 3D filter">
-                    <img src="resources/360_stmt_ablation/bicycle_0_ours.jpg" alt="Mip-Splatting (ours)">
-                    <img src="resources/360_stmt_ablation/bicycle_0_upgt.jpg" alt="GT (Training resolution)">
-                    <img src="resources/360_stmt_ablation/bicycle_0_gt.jpg" alt="GT (8x resolution)">
-
+                <div class="item item-steve">
+                    <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+                        <source src="video/blender/cd-compare.mp4"
+                                type="video/mp4">
+                    </video>
                 </div>
-            </div>
-
-            <br><br>
-
-            <h3 class="title is-4">Real-Time Interactive Viewer</h3>
-            <div class="content has-text-justified">
-                <p>
-                    Click the image to use the real-time interactive viewer. Please open the viewer with Chrome or
-                    Firefox. For more results, please check our <a
-                        href="https://niujinshuchong.github.io/mip-splatting-demo/">online viewer</a>.
-                </p>
-            </div>
-
-            <div class="content-row">
-                <div class="demo-scene-panel" onclick="openDemo('bicycle')">
-                    <img src="resources/images/bicycle.png" class="demo-scene-panel-image">
-                    <span class="small-title">Bicycle</span>
+                <div class="item item-fullbody">
+                    <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                        <source src="video/blender/wineholder-compare.mp4"
+                                type="video/mp4">
+                    </video>
                 </div>
-
-                <div class="demo-scene-panel" onclick="openDemo('garden')">
-                    <img src="resources/images/garden.png" class="demo-scene-panel-image">
-                    <span class="small-title">Garden</span>
-                </div>
-                <div class="demo-scene-panel" onclick="openDemo('stump')">
-                    <img src="resources/images/stump.png" class="demo-scene-panel-image">
-                    <span class="small-title">Stump</span>
-                </div>
-                <div class="demo-scene-panel" onclick="openDemo('kitchen')">
-                    <img src="resources/images/kitchen.png" class="demo-scene-panel-image">
-                    <span class="small-title">Kitchen</span>
-                </div>
-
-            </div>
-
-            <div class="content-row">
-                <div class="demo-scene-panel" onclick="openDemo('chair')">
-                    <img src="resources/images/chair.png" class="demo-scene-panel-image">
-                    <span class="small-title">Chair</span>
-                </div>
-                <div class="demo-scene-panel" onclick="openDemo('ficus')">
-                    <img src="resources/images/ficus.png" class="demo-scene-panel-image">
-                    <span class="small-title">Ficus</span>
-                </div>
-                <div class="demo-scene-panel" onclick="openDemo('lego')">
-                    <img src="resources/images/lego.png" class="demo-scene-panel-image">
-                    <span class="small-title">Lego</span>
-                </div>
-                <div class="demo-scene-panel" onclick="openDemo('ship')">
-                    <img src="resources/images/ship.png" class="demo-scene-panel-image">
-                    <span class="small-title">Ship</span>
+                <div class="item item-fullbody">
+                    <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                        <source src="video/blender/steamtrain-compare.mp4"
+                                type="video/mp4">
+                    </video>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+
 <section class="section">
     <div class="container is-max-desktop">
         <div class="content has-text-justified">
             <h2 class="title is-3 is-centered has-text-centered">Pipeline of Spec-Gaussian</h2>
             <div class="has-text-centered">
-                <img style="width: 90%;" src="resources/pipeline.png"
+                <img style="width: 90%;" src="img/pipeline.png"
                      alt="HyperNeRF architecture."/>
             </div>
         </div>
@@ -413,16 +284,16 @@
 <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
         <h2 class="title">BibTeX</h2>
-        <pre><code>@article{Yu2023MipSplatting,
-  author    = {Yu, Zehao and Chen, Anpei and Huang, Binbin and Sattler, Torsten and Geiger, Andreas},
-  title     = {Mip-Splatting: Alias-free 3D Gaussian Splatting},
-  journal   = {arXiv:2311.16493},
-  year      = {2023},
+        <pre><code>@article{yang2023deformable3dgs,
+    title={Deformable 3D Gaussians for High-Fidelity Monocular Dynamic Scene Reconstruction},
+    author={Yang, Ziyi and Gao, Xinyu and Zhou, Wen and Jiao, Shaohui and Zhang, Yuqing and Jin, Xiaogang},
+    journal={arXiv preprint arXiv:2309.13101},
+    year={2023}
 }</code></pre>
     </div>
 </section>
 
-<footer class="footer">
+<footer class="footer is-center">
     <div class="container">
         <div class="content has-text-centered">
         </div>
