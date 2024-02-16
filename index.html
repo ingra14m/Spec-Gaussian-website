@@ -74,17 +74,17 @@
                     Related Research
                 </a>
                 <div class="navbar-dropdown">
-                    <a class="navbar-item" href="https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/">
+                    <a class="navbar-item" href="https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/" target="_blank">
                         3D Gaussian Splatting
                     </a>
-                    <a class="navbar-item" href="https://www.albertpumarola.com/research/D-NeRF/index.html">
-                        D-NeRF
+                    <a class="navbar-item" href="https://ingra14m.github.io/Deformable-Gaussians/" target="_blank">
+                        Deformable-GS
                     </a>
-                    <a class="navbar-item" href="https://jaminfong.cn/tineuvox/">
-                        TiNeuVox
+                    <a class="navbar-item" href="https://yihua7.github.io/SC-GS-web/" target="_blank">
+                        SC-GS
                     </a>
-                    <a class="navbar-item" href="https://sarafridov.github.io/K-Planes/">
-                        K-Planes
+                    <a class="navbar-item" href="">
+                        Seamless-GS
                     </a>
                 </div>
             </div>
@@ -104,6 +104,8 @@
                     <h2 class="title is-2 publication-title" style="margin-top: 0; margin-bottom: 0">Anisotropic
                         View-Dependent Appearance for 3D Gaussian Splatting</h2>
 
+                    <h3 style="color:#5a6268;" class="title is-3">Arxiv 2024 </h3>
+
                     <div class="is-size-5 publication-authors">
                         <span class="author-block">
                           <a href="https://github.com/ingra14m" target="_blank">Ziyi Yang</a><sup>1,3</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -121,9 +123,9 @@
                         <span class="author-block">
                           <a>Shaohui Jiao</a><sup>3</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
                         <span class="author-block">
-                          <a href="https://xjqi.github.io/">Xiaojuan Qi</a><sup>2</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                          <a href="https://xjqi.github.io/" target="_blank">Xiaojuan Qi</a><sup>2</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
                         <span class="author-block">
-                          <a href="http://www.cad.zju.edu.cn/home/jin/">Xiaogang Jin&Dagger;</a><sup>1</sup>
+                          <a href="http://www.cad.zju.edu.cn/home/jin/" target="_blank">Xiaogang Jin&Dagger;</a><sup>1</sup>
                         </span>
                     </div>
 
@@ -138,46 +140,36 @@
                         <div class="publication-links">
                             <!-- PDF Link. -->
                             <span class="link-block">
-                <a href="https://drive.google.com/file/d/1Q7KgGbynzcIEyFJV1I17HgrYz6xrOwRJ/view?usp=sharing"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-
-                            <span class="link-block">
-                <a href="https://arxiv.org/pdf/"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                                <a href=""
+                                   class="external-link button is-normal is-rounded is-dark">
+                                  <span class="icon">
+                                      <i class="fas fa-file-pdf"></i>
+                                  </span>
+                                  <span>Paper</span>
+                                </a>
+                            </span>
 
                             <!-- Code Link. -->
                             <span class="link-block">
-                <a href="https://github.com/ingra14m/Spec-Gaussian"
-                   class="external-link button is-normal is-rounded is-dark disabled">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
+                                <a href="https://github.com/ingra14m/Spec-Gaussian"
+                                   class="external-link button is-normal is-rounded is-dark disabled">
+                                  <span class="icon">
+                                      <i class="fab fa-github"></i>
+                                  </span>
+                                  <span>Code</span>
+                                </a>
+                            </span>
 
-                            <!-- Code Link. -->
+                            <!-- Dataset Link. -->
                             <span class="link-block">
-                <a href="https://niujinshuchong.github.io/mip-splatting-demo/"
-                   class="external-link button is-normal is-rounded is-dark disabled">
-                  <span class="icon">
-                      <i class="fab fa-dribbble"></i>
-                  </span>
-                  <span>Viewer</span>
-                  </a>
-              </span>
+                                <a href=""
+                                   class="external-link button is-normal is-rounded is-dark">
+                                  <span class="icon">
+                                      <i class="far fa-images"></i>
+                                  </span>
+                                  <span>Anisotropic Dataset</span>
+                                </a>
+                            </span>
 
 
                         </div>
@@ -189,101 +181,6 @@
     </div>
 </section>
 
-<section class="hero teaser">
-    <div class="container is-max-desktop">
-        <div class="hero-body">
-            <div class="columns is-centered has-text-centered">
-                <div class="column is-full-width">
-
-                    <video class="video" width="100%" id="xyalias6" loop playsinline autoplay muted
-                           src="resources/bicycle_3dgs_vs_ours.mp4" onplay="resizeAndPlay(this)"
-                           style="height: 0px;"></video>
-                    <canvas height=0 class="videoMerge" id="xyalias6Merge"></canvas>
-
-                    <h2 class="subtitle has-text-centered" style="margin-top: 15px">
-                        TL;DR: We introduce a 3D smoothing filter and a 2D Mip filter for 3D Gaussian Splatting (3DGS),
-                        eliminating multiple artifacts and achieving alias-free renderings.
-                    </h2>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="section">
-    <div class="container is-max-desktop">
-        <!-- Abstract. -->
-        <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-                <h2 class="title is-3" style="margin-top: -30px">Abstract</h2>
-                <div class="content has-text-justified">
-                    <p>
-                        Recently, 3D Gaussian Splatting (3DGS) has demonstrated impressive novel view synthesis results,
-                        reaching high fidelity and efficiency.
-                        However, strong artifacts can be observed when changing the sampling rate, e.g., by changing
-                        focal length or camera distance.
-                        We find that the source for this phenomenon can be attributed to the lack of 3D frequency
-                        constraints and the usage of a 2D dilation filter.
-                        To address this problem, we introduce a 3D smoothing filter which constrains the size of the 3D
-                        Gaussian primitives based on the maximal sampling frequency induced by the input views,
-                        eliminating high frequency artifacts when zooming in.
-                        Moreover, replacing 2D dilation with a 2D Mip filter, which simulates a 2D box filter,
-                        effectively mitigates aliasing and dilation issues.
-                        Our comprehensive evaluation, including scenarios such as training on single-scale images and
-                        testing on multiple scales, validates the effectiveness of our approach.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <!--/ Abstract. -->
-        <!-- Paper video. -->
-        <!--
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <h2 class="title is-3">Video</h2>
-            <div class="publication-video">
-              <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-        -->
-        <!--/ Paper video. -->
-    </div>
-</section>
-
-
-<section class="section">
-    <div class="container is-max-desktop">
-
-        <!-- Method. -->
-        <div class="columns is-centered has-text-centered">
-            <div class="column is-full-width">
-                <h2 class="title is-3" style="margin-top: -20px">Motivation</h2>
-
-                <img src="./resources/teaser.png" class="center">
-                <div class="content has-text-justified">
-                    <p style="margin-top: 30px">
-                        <b>3D Gaussian Splatting</b> renders images by representing
-                        <b><span style="color: #0a0ae7">3D Objects</span></b> as <b>Gaussians</b> which are projected
-                        onto the image plane followed by <b><span style="color: #e70a0a">2D Dilation</span></b> in
-                        screen space as shown in (a).
-                        The method's intrinsic shrinkage bias leads to degenerate 3D Gaussians exceed the sampling limit
-                        as illustrated by the &delta; function in (b) while rendering similarly to 2D due to the
-                        dilation operation.
-                        However, when changing the sampling rate (via the focal length or camera distance), we observe
-                        strong dilation effects (c) and high frequency artifacts (d).
-                    </p>
-                </div>
-
-            </div>
-        </div>
-        <!--/ Animation. -->
-
-    </div>
-</section>
-
 
 <section class="section">
     <div class="container is-max-desktop">
@@ -291,65 +188,14 @@
         <!-- Results. -->
         <div class="columns is-centered ">
             <div class="column is-full-width">
-                <h2 class="title is-3 has-text-centered" style="margin-top: -30px">Results</h2>
+                <h2 class="title is-3 has-text-centered" style="margin-top: -30px">Results on NeRF Dataset</h2>
 
-                <h3 class="title is-4">Comparison wtih 3DGS</h3>
-                <div class="content has-text-justified">
-                    <p>
-                        3DGS produces dilation and erosion artifacts due to the use of dilation.
-                        It produces erosion effects when zooming in or moving the camera closer.
-                        This is because the dilated 2D Gaussians become smaller in screen space, rendering object
-                        structures thinner than they actually appear.
-                        Conversely, screen space dilation produces dilation artifacts when zooming out or moving away
-                        from the scene.
-                        In this case, dilated 2D Gaussian become bigger in screen space, rendering object structures
-                        thicker than they actually appear.
-                        In contrast, our method is free of such artifacts by introducing a 3D smoothing filter and a 2D
-                        Mip filter.
-                    </p>
-                </div>
-
-                <div class="content has-text-centered">
-                    <video class="video" width="100%" id="xyalias1" loop playsinline autoplay muted
-                           src="resources/ship_3dgs_vs_ours.mp4" onplay="resizeAndPlay(this)"
-                           style="height: 0px;"></video>
-                    <canvas height=0 class="videoMerge" id="xyalias1Merge"></canvas>
-                </div>
-
-
-                <h3 class="title is-4">Comparison wtih 3DGS + EWA</h3>
-                <div class="content has-text-justified">
-                    <p>
-                        Replacing the 2D dilation of 3DGS with an EWA (elliptical weighted average) filter, denoted as
-                        3DGS + EWA, reduces the dilation and erosion artifacts.
-                        However, it produces high-frequency artifacts when zooming in, while our method is free of such
-                        artifacts, as shown in the following comparisons.
-                    </p>
-                </div>
-
-                <!-- 
-                <div class="content has-text-centered">
-                  <video class="video" width="100%" id="xyalias2" loop playsinline autoplay muted src="resources/materials_3dgs_ewa_vs_ours.mp4" onplay="resizeAndPlay(this)" style="height: 0px;"></video>
-                  <canvas height=0 class="videoMerge" id="xyalias2Merge"></canvas>
-                </div>
-                -->
-
-                <div class="content has-text-centered">
-                    <video class="video" width="100%" id="xyalias9" loop playsinline autoplay muted
-                           src="resources/bonsai_3dgs_ewa_vs_ours.mp4" onplay="resizeAndPlay(this)"
-                           style="height: 0px;"></video>
-                    <canvas height=0 class="videoMerge" id="xyalias9Merge"></canvas>
-                </div>
-
-                <div class="content has-text-justified">
-                    <p>
-                        Here, we show more comparisons with 3DGS + EWA. Both models are trained with downsampled images
-                        with factor 8 and render at higher-resolution.
-                        GT (Training resolution) is the image we used for training but bilinearly upsampled to
-                        higher-resolution for reference and GT (8x resolution) is the real GT image we used for
-                        evaluation.
-                    </p>
-                </div>
+<!--                <div class="content has-text-centered">-->
+<!--                    <video class="video" width="100%" id="xyalias9" loop playsinline autoplay muted-->
+<!--                           src="resources/ashtray2.mp4" onplay="resizeAndPlay(this)"-->
+<!--                           style="height: 0px;"></video>-->
+<!--                    <canvas height=0 class="videoMerge" id="xyalias9Merge"></canvas>-->
+<!--                </div>-->
 
                 <div class="container">
                     <ul class="nav nav-tabs nav-fill nav-justified" id="object-scale-recon">
@@ -518,17 +364,51 @@
     </div>
 </section>
 
-<section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-        <h2 class="title">BibTeX</h2>
-        <pre><code>@article{Yu2023MipSplatting,
-  author    = {Yu, Zehao and Chen, Anpei and Huang, Binbin and Sattler, Torsten and Geiger, Andreas},
-  title     = {Mip-Splatting: Alias-free 3D Gaussian Splatting},
-  journal   = {arXiv:2311.16493},
-  year      = {2023},
-}</code></pre>
+<section class="section">
+    <div class="container is-max-desktop">
+        <div class="content has-text-justified">
+            <h2 class="title is-3 is-centered has-text-centered">Pipeline of Spec-Gaussian</h2>
+            <div class="has-text-centered">
+                <img style="width: 90%;" src="resources/pipeline.png"
+                     alt="HyperNeRF architecture."/>
+            </div>
+        </div>
     </div>
 </section>
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        The recent advancements in 3D Gaussian splatting (3D-GS) have not only facilitated real-time
+                        rendering through modern GPU rasterization pipelines but have also attained state-of-the-art
+                        rendering quality. Nevertheless, despite its exceptional rendering quality and performance on
+                        standard datasets, 3D-GS frequently encounters difficulties in accurately modeling specular and
+                        anisotropic components. This issue stems from the limited ability of spherical harmonics (SH) to
+                        represent high-frequency information.
+                        To overcome this challenge, we introduce Spec-Gaussian, an approach that utilizes an
+                        anisotropic spherical Gaussian (ASG) appearance field instead of SH for modeling the
+                        view-dependent appearance of each 3D Gaussian. Additionally, we have developed a coarse-to-fine
+                        training strategy to improve learning efficiency and eliminate floaters caused by overfitting in
+                        real-world scenes. Our experimental results demonstrate that our method surpasses existing
+                        approaches in terms of rendering quality.
+                        Thanks to ASG, we have significantly improved the ability of 3D-GS to model scenes with specular
+                        and anisotropic components without increasing the number of 3D Gaussians. This improvement
+                        extends the applicability of 3D GS to handle intricate scenarios with specular and anisotropic
+                        surfaces.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--/ Abstract. -->
+
+    </div>
+</section>
+
 
 <section class="section" id="Acknowledgements">
     <div class="container is-max-desktop content">
@@ -540,25 +420,17 @@
     </div>
 </section>
 
-<section class="section" id="References">
+<section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
-
-        <h3 class="title is-4">References</h3>
-        <div class="content has-text-justified">
-            <ul>
-                <li>
-                    <a href="https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/" target="_blank">3D Gaussian
-                        Splatting for Real-Time Radiance Field Rendering</a>
-                </li>
-                <li>
-                    <a href="https://www.cs.umd.edu/~zwicker/publications/EWASplatting-TVCG02.pdf" target="_blank">EWA
-                        Splatting</a>
-                </li>
-            </ul>
-        </div>
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@article{Yu2023MipSplatting,
+  author    = {Yu, Zehao and Chen, Anpei and Huang, Binbin and Sattler, Torsten and Geiger, Andreas},
+  title     = {Mip-Splatting: Alias-free 3D Gaussian Splatting},
+  journal   = {arXiv:2311.16493},
+  year      = {2023},
+}</code></pre>
     </div>
 </section>
-
 
 <footer class="footer">
     <div class="container">
