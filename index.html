@@ -201,12 +201,12 @@
                                 type="video/mp4">
                     </video>
                 </div>
-<!--                <div class="item item-steve">-->
-<!--                    <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">-->
-<!--                        <source src="video/blender/cd-compare.mp4"-->
-<!--                                type="video/mp4">-->
-<!--                    </video>-->
-<!--                </div>-->
+                <!--                <div class="item item-steve">-->
+                <!--                    <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">-->
+                <!--                        <source src="video/blender/cd-compare.mp4"-->
+                <!--                                type="video/mp4">-->
+                <!--                    </video>-->
+                <!--                </div>-->
                 <div class="item item-fullbody">
                     <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
                         <source src="video/blender/compare-ship.mp4"
@@ -224,6 +224,137 @@
                         <source src="video/blender/steamtrain-compare.mp4"
                                 type="video/mp4">
                     </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <h2 class="title is-3">Visual Comparisons</h2>
+        <div class="content has-text-justified">
+            <p>
+
+            </p>
+        </div>
+        <div class="columns is-centered">
+            <!-- Visual Effects. -->
+            <div class="column">
+                <div class="content">
+                    <div class="columns is-centered">
+                        <div class="column is-full-width">
+                            <div id="example1" class="bal-container-small">
+
+                                <div class="bal-after">
+                                    <img src="img/ours/drums-ours-16.png">
+                                    <div class="bal-afterPosition afterLabel">
+                                        Ours
+                                    </div>
+                                </div>
+
+                                <div class="bal-before">
+                                    <div class="bal-before-inset">
+                                        <img src="img/3d-gs/Drums-gs.png">
+                                        <div class="bal-beforePosition beforeLabel">
+                                            3D-GS [Kerbl 2023]
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bal-handle">
+                                    <span class=" handle-left-arrow"></span>
+                                    <span class="handle-right-arrow"></span>
+                                </div>
+
+                            </div>
+
+
+                            <div id="example2" class="bal-container-small">
+
+                                <div class="bal-after">
+                                    <img src="img/12plane-ours-82.png">
+                                    <div class="bal-afterPosition afterLabel">
+                                        Ours
+                                    </div>
+                                </div>
+
+                                <div class="bal-before">
+                                    <div class="bal-before-inset">
+                                        <img src="img/12plane-scaffold.png">
+                                        <div class="bal-beforePosition beforeLabel">
+                                            Plenoxels [Fridovich-Keil and Yu 2022]
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bal-handle">
+                                    <span class=" handle-left-arrow"></span>
+                                    <span class="handle-right-arrow"></span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--/ Visual Effects. -->
+
+            <!-- Matting. -->
+            <div class="column">
+                <div class="columns is-centered">
+                    <div class="column content">
+
+                        <div id="example4" class="bal-container-small">
+                            <div class="bal-after">
+                                <img src="img/ours/Lego-ours-3.png">
+                                <div class="bal-afterPosition afterLabel">
+                                    Ours
+                                </div>
+                            </div>
+
+                            <div class="bal-before">
+                                <div class="bal-before-inset">
+                                    <img src="img/scaffold/Lego-scaffold.png">
+                                    <div class="bal-beforePosition beforeLabel">
+                                        Scaffold-GS [Lu 2023]
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bal-handle">
+                                <span class=" handle-left-arrow"></span>
+                                <span class="handle-right-arrow"></span>
+                            </div>
+
+                        </div>
+
+                        <div id="example5" class="bal-container-small">
+                            <div class="bal-after">
+                                <img src="content/images/comparisons/ours_truck.png">
+                                <div class="bal-afterPosition afterLabel">
+                                    Ours
+                                </div>
+                            </div>
+
+                            <div class="bal-before">
+                                <div class="bal-before-inset">
+                                    <img src="content/images/comparisons/gt_truck.png">
+                                    <div class="bal-beforePosition beforeLabel">
+                                        Ground Truth
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bal-handle">
+                                <span class=" handle-left-arrow"></span>
+                                <span class="handle-right-arrow"></span>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -323,6 +454,25 @@
         </div>
     </div>
 </footer>
+
+
+<script src="static/js/script.js"></script>
+
+<script>
+    new BeforeAfter({
+        id: '#example1'
+    });
+    new BeforeAfter({
+        id: '#example2'
+    });
+    new BeforeAfter({
+        id: '#example4'
+    });
+    new BeforeAfter({
+        id: '#example5'
+    });
+
+</script>
 
 </body>
 </html>
