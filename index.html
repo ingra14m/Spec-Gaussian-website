@@ -191,7 +191,7 @@
     <div class="hero-body">
         <div class="container">
             <div class="content has-text-justified">
-                <h3 class="title is-3 is-centered has-text-centered">Results on the NeRF Synthetic Dataset</h3>
+                <h3 class="title is-3 is-centered has-text-centered">Results on the NeRF and NSVF Synthetic Dataset</h3>
             </div>
 
             <div id="results-carousel" class="carousel results-carousel">
@@ -231,131 +231,117 @@
 </section>
 
 
-<section class="section">
-    <div class="container">
-        <div class="content has-text-justified">
-            <h3 class="title is-3 is-centered has-text-centered">Visual Comparisons</h3>
-        </div>
-        <div class="content has-text-justified">
-            <p>
+<section class="hero is-light is-small">
+    <div class="hero-body">
+        <div class="container">
+            <div class="content has-text-justified">
+                <h3 class="title is-3 is-centered has-text-centered">Visual Comparisons</h3>
+            </div>
+            <div class="content has-text-justified">
+                <p>
 
-            </p>
-        </div>
-        <div class="columns is-centered">
-            <!-- Visual Effects. -->
-            <div class="column">
-                <div class="content">
-                    <div class="columns is-centered">
-                        <div class="column is-full-width">
-                            <div id="example1" class="bal-container-small">
+                </p>
+            </div>
+            <div class="columns is-centered">
+                <!-- Visual Effects. -->
+                <div class="column">
+                    <div class="content">
+                        <div class="columns is-centered">
+                            <div class="column is-full-width">
+                                <div id="example1" class="bal-container-small">
 
-                                <div class="bal-after">
-                                    <img src="img/ours/drums-ours-16.png">
-                                    <div class="bal-afterPosition afterLabel">
-                                        Ours
-                                    </div>
-                                </div>
-
-                                <div class="bal-before">
-                                    <div class="bal-before-inset">
-                                        <img src="img/3d-gs/Drums-gs.png">
-                                        <div class="bal-beforePosition beforeLabel">
-                                            3D-GS [Kerbl 2023]
+                                    <div class="bal-after">
+                                        <img src="img/ours/drums-ours-16.png">
+                                        <div class="bal-afterPosition afterLabel">
+                                            Ours
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="bal-handle">
-                                    <span class=" handle-left-arrow"></span>
-                                    <span class="handle-right-arrow"></span>
-                                </div>
-
-                            </div>
-
-
-                            <div id="example2" class="bal-container-small">
-
-                                <div class="bal-after">
-                                    <img src="img/00009-gt.png">
-                                    <div class="bal-afterPosition afterLabel">
-                                        Ours
-                                    </div>
-                                </div>
-
-                                <div class="bal-before">
-                                    <div class="bal-before-inset">
-                                        <img src="img/00009.png">
-                                        <div class="bal-beforePosition beforeLabel">
-                                            Plenoxels [Fridovich-Keil and Yu 2022]
+                                    <div class="bal-before">
+                                        <div class="bal-before-inset">
+                                            <img src="img/3d-gs/Drums-gs.png">
+                                            <div class="bal-beforePosition beforeLabel">
+                                                3D-GS [Kerbl 2023]
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="bal-handle">
-                                    <span class=" handle-left-arrow"></span>
-                                    <span class="handle-right-arrow"></span>
+                                    <div class="bal-handle">
+                                        <span class=" handle-left-arrow"></span>
+                                        <span class="handle-right-arrow"></span>
+                                    </div>
+
                                 </div>
 
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!--/ Visual Effects. -->
+                <!--/ Visual Effects. -->
 
-            <!-- Matting. -->
-            <div class="column">
-                <div class="columns is-centered">
-                    <div class="column content">
+                <!-- Matting. -->
+                <div class="column">
+                    <div class="columns is-centered">
+                        <div class="column content">
 
-                        <div id="example4" class="bal-container-small">
-                            <div class="bal-after">
-                                <img src="img/ours/Lego-ours-3.png">
-                                <div class="bal-afterPosition afterLabel">
-                                    Ours
-                                </div>
-                            </div>
-
-                            <div class="bal-before">
-                                <div class="bal-before-inset">
-                                    <img src="img/scaffold/Lego-scaffold.png">
-                                    <div class="bal-beforePosition beforeLabel">
-                                        Scaffold-GS [Lu 2023]
+                            <div id="example2" class="bal-container-small">
+                                <div class="bal-after">
+                                    <img src="img/ours/Lego-ours-3.png">
+                                    <div class="bal-afterPosition afterLabel">
+                                        Ours
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="bal-handle">
-                                <span class=" handle-left-arrow"></span>
-                                <span class="handle-right-arrow"></span>
+                                <div class="bal-before">
+                                    <div class="bal-before-inset">
+                                        <img src="img/scaffold/Lego-scaffold.png">
+                                        <div class="bal-beforePosition beforeLabel">
+                                            Scaffold-GS [Lu 2023]
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bal-handle">
+                                    <span class=" handle-left-arrow"></span>
+                                    <span class="handle-right-arrow"></span>
+                                </div>
+
                             </div>
 
                         </div>
+                    </div>
+                </div>
 
-<!--                        <div id="example5" class="bal-container-small">-->
-<!--                            <div class="bal-after">-->
-<!--                                <img src="img/ours/counter-ours-7.png">-->
-<!--                                <div class="bal-afterPosition afterLabel">-->
-<!--                                    Ours-->
-<!--                                </div>-->
-<!--                            </div>-->
+                <div class="column">
+                    <div class="columns is-centered">
+                        <div class="column content">
 
-<!--                            <div class="bal-before">-->
-<!--                                <div class="bal-before-inset">-->
-<!--                                    <img src="img/3d-gs/counter-gs.png">-->
-<!--                                    <div class="bal-beforePosition beforeLabel">-->
-<!--                                        Ground Truth-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
+                            <div id="example4" class="bal-container-small">
+                                <div class="bal-after">
+                                    <img src="img/ours/lifestyle-ours-31.png">
+                                    <div class="bal-afterPosition afterLabel">
+                                        Ours
+                                    </div>
+                                </div>
 
-<!--                            <div class="bal-handle">-->
-<!--                                <span class=" handle-left-arrow"></span>-->
-<!--                                <span class="handle-right-arrow"></span>-->
-<!--                            </div>-->
+                                <div class="bal-before">
+                                    <div class="bal-before-inset">
+                                        <img src="img/gs-shader/lifestyle-gs-shader.jpeg">
+                                        <div class="bal-beforePosition beforeLabel">
+                                            GS-Shader [Jiang 2023]
+                                        </div>
+                                    </div>
+                                </div>
 
-<!--                        </div>-->
+                                <div class="bal-handle">
+                                    <span class=" handle-left-arrow"></span>
+                                    <span class="handle-right-arrow"></span>
+                                </div>
+
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
