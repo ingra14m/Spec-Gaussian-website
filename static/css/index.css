@@ -207,7 +207,7 @@ td {
 .bal-container-small {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 700px;
     cursor: grab;
     overflow: hidden;
 }
@@ -215,7 +215,7 @@ td {
 .bal-container-big {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 700px;
     cursor: grab;
     overflow: hidden;
 }
