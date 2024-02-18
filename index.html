@@ -350,6 +350,129 @@
 </section>
 
 
+<section class="hero is-light is-small">
+    <div class="hero-body">
+        <div class="container">
+            <div class="content has-text-justified">
+                <h3 class="title is-3 is-centered has-text-centered">Results on the Mip-360 Dataset</h3>
+            </div>
+
+            <div id="results-carousel" class="carousel results-carousel">
+                <div class="item item-fullbody">
+                    <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                        <source src="video/mip360/bonsai-compare.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-fullbody">
+                    <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                        <source src="video/mip360/counter-compare.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-fullbody">
+                    <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                        <source src="video/mip360/kitchen-compare.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-fullbody">
+                    <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                        <source src="video/mip360/stump-compare.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="hero is-light is-small">
+    <div class="hero-body">
+        <div class="container">
+            <div class="content has-text-justified">
+                <h3 class="title is-3 is-centered has-text-centered">Visual Comparisons</h3>
+            </div>
+            <div class="content has-text-justified">
+                <p>
+
+                </p>
+            </div>
+            <div class="columns is-centered">
+                <!-- Visual Effects. -->
+                <div class="column">
+                    <div class="content">
+                        <div class="columns is-centered">
+                            <div class="column is-full-width">
+                                <div id="example5" class="bal-container-mip360">
+
+                                    <div class="bal-after">
+                                        <img src="img/ours/bicycle-ours-0.png">
+                                        <div class="bal-afterPosition afterLabel">
+                                            Ours
+                                        </div>
+                                    </div>
+
+                                    <div class="bal-before">
+                                        <div class="bal-before-inset">
+                                            <img src="img/3d-gs/bicycle-gs.png">
+                                            <div class="bal-beforePosition beforeLabel">
+                                                3D-GS [Kerbl 2023]
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bal-handle">
+                                        <span class=" handle-left-arrow"></span>
+                                        <span class="handle-right-arrow"></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="columns is-centered">
+                        <div class="column content">
+
+                            <div id="example3" class="bal-container-mip360">
+                                <div class="bal-after">
+                                    <img src="img/ours/flowers-ours.png">
+                                    <div class="bal-afterPosition afterLabel">
+                                        Ours
+                                    </div>
+                                </div>
+
+                                <div class="bal-before">
+                                    <div class="bal-before-inset">
+                                        <img src="img/scaffold/flowers-scaffold.png">
+                                        <div class="bal-beforePosition beforeLabel">
+                                            GS-Shader [Jiang 2023]
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bal-handle">
+                                    <span class=" handle-left-arrow"></span>
+                                    <span class="handle-right-arrow"></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <section class="section">
     <div class="container is-max-desktop">
         <div class="content has-text-justified">
@@ -459,6 +582,14 @@
     new BeforeAfter({
         id: '#example5'
     });
+
+    new BeforeAfter({
+        id: '#example3'
+    })
+
+    new BeforeAfter({
+        id: '#example6'
+    })
 
 </script>
 
