@@ -522,6 +522,161 @@
 </section>
 
 
+<section class="hero is-light is-small">
+    <div class="hero-body">
+        <div class="container">
+            <div class="content has-text-justified">
+                <h3 class="title is-3 is-centered has-text-centered">Results on our Anisotropic Synthetic Dataset</h3>
+            </div>
+
+            <div id="results-carousel" class="carousel results-carousel">
+                <div class="item item-fullbody">
+                    <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                        <source src="video/asg/cd-compare.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-fullbody">
+                    <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                        <source src="video/asg/ashtray-compare.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-fullbody">
+                    <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                        <source src="video/asg/dishes-compare.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-fullbody">
+                    <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                        <source src="video/asg/lock-compare.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="hero is-light is-small">
+    <div class="hero-body">
+        <div class="container">
+            <div class="content has-text-justified">
+                <h3 class="title is-3 is-centered has-text-centered">Visual Comparisons</h3>
+            </div>
+            <div class="content has-text-justified">
+                <p>
+
+                </p>
+            </div>
+            <div class="columns is-centered">
+                <!-- Visual Effects. -->
+                <div class="column">
+                    <div class="content">
+                        <div class="columns is-centered">
+                            <div class="column is-full-width">
+                                <div id="teapot" class="bal-container-asg">
+
+                                    <div class="bal-after">
+                                        <img src="img/ours/12plane-ours-82.png">
+                                        <div class="bal-afterPosition afterLabel">
+                                            Ours
+                                        </div>
+                                    </div>
+
+                                    <div class="bal-before">
+                                        <div class="bal-before-inset">
+                                            <img src="img/3d-gs/12plane-gs.png">
+                                            <div class="bal-beforePosition beforeLabel">
+                                                3D-GS [Kerbl 2023]
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bal-handle">
+                                        <span class=" handle-left-arrow"></span>
+                                        <span class="handle-right-arrow"></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="columns is-centered">
+                        <div class="column content">
+
+                            <div id="plane12" class="bal-container-asg">
+                                <div class="bal-after">
+                                    <img src="img/ours/teapot-ours.jpeg">
+                                    <div class="bal-afterPosition afterLabel">
+                                        Ours
+                                    </div>
+                                </div>
+
+                                <div class="bal-before">
+                                    <div class="bal-before-inset">
+                                        <img src="img/scaffold/teapot-scaffold.jpeg">
+                                        <div class="bal-beforePosition beforeLabel">
+                                            Scaffold-GS [Lu 2023]
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bal-handle">
+                                    <span class=" handle-left-arrow"></span>
+                                    <span class="handle-right-arrow"></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="columns is-centered">
+                        <div class="column content">
+
+                            <div id="jupyter" class="bal-container-asg">
+                                <div class="bal-after">
+                                    <img src="img/ours/jupyter-ours-41.png">
+                                    <div class="bal-afterPosition afterLabel">
+                                        Ours
+                                    </div>
+                                </div>
+
+                                <div class="bal-before">
+                                    <div class="bal-before-inset">
+                                        <img src="img/3d-gs/jupyter-gs.png">
+                                        <div class="bal-beforePosition beforeLabel">
+                                            3D-GS [Kerbl 2023]
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bal-handle">
+                                    <span class=" handle-left-arrow"></span>
+                                    <span class="handle-right-arrow"></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <section class="section">
     <div class="container is-max-desktop">
         <div class="content has-text-justified">
@@ -642,6 +797,18 @@
 
     new BeforeAfter({
         id: '#garden'
+    })
+
+    new BeforeAfter({
+        id: '#teapot'
+    })
+
+    new BeforeAfter({
+        id: '#plane12'
+    })
+
+    new BeforeAfter({
+        id: '#jupyter'
     })
 
 </script>

@@ -220,6 +220,14 @@ td {
     overflow: hidden;
 }
 
+.bal-container-asg {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    cursor: grab;
+    overflow: hidden;
+}
+
 .bal-container-big {
     position: relative;
     width: 100%;
