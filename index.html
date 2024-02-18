@@ -42,6 +42,10 @@
     <script src="./static/js/bulma-carousel.min.js"></script>
     <script src="./static/js/bulma-slider.min.js"></script>
     <script src="./static/js/index.js"></script>
+
+    <link rel="stylesheet" href="./static/css/dics.original.css">
+    <script src="./static/js/event_handler.js"></script>
+    <script src="./static/js/dics.original.js"></script>
 </head>
 <body>
 
@@ -677,6 +681,25 @@
 </section>
 
 
+<section class="hero is-light is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="content has-text-justified">
+                <h3 class="title is-3 is-centered has-text-centered">Visual Comparisons on Nex Dataset</h3>
+            </div>
+
+            <div class="b-dics" style="width: 1600px; font-weight: 600;">
+                <img src="img/nex/cd-gs.png" alt="3D-GS">
+                <img src="img/nex/cd-scaffold.png" alt="Scaffold-GS">
+                <img src="img/nex/cd-ours.png" alt="Ours">
+                <img src="img/nex/cd-gt.png" alt="GT">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
 <section class="section">
     <div class="container is-max-desktop">
         <div class="content has-text-justified">
@@ -742,6 +765,29 @@
     journal={arXiv preprint arXiv:2309.13101},
     year={2023}
 }</code></pre>
+    </div>
+</section>
+
+<section class="section" id="References">
+    <div class="container is-max-desktop content">
+
+        <h2 class="title">References</h2>
+        <div class="content has-text-justified">
+            <ul>
+                <li>
+                    <a href="https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/" target="_blank">3D Gaussian Splatting for Real-Time Radiance Field Rendering</a>
+                </li>
+                <li>
+                    <a href="https://city-super.github.io/scaffold-gs/" target="_blank">Scaffold-GS: Structured 3D Gaussians for View-Adaptive Rendering</a>
+                </li>
+                <li>
+                    <a href="https://asparagus15.github.io/GaussianShader.github.io/" target="_blank">GaussianShader: 3D Gaussian Splatting with Shading Functions for Reflective Surfaces</a>
+                </li>
+                <li>
+                    <a href="https://nex-mpi.github.io/" target="_blank">NeX: Real-time View Synthesis with Neural Basis Expansion</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </section>
 
